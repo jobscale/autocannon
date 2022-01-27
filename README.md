@@ -3,7 +3,7 @@
 ## Installation
 
 ```
-npm i @jobscale/autocannon
+npm i @jobscale/autocannon @jobscale/logger
 ```
 
 ## Examples
@@ -22,7 +22,7 @@ const it = async () => {
     connections: 10, // default
     pipelining: 1, // default
     duration: 10, // default
-  }, debug);
+  }, logger.info);
   const result = await autocannon({
     title: 'async',
     url,
