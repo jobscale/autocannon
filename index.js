@@ -1,4 +1,4 @@
-const autocannon = require('autocannon');
+import autocannon from 'autocannon';
 
-module.exports = autocannon;
-module.exports.autocannon = autocannon;
+export { autocannon };
+export default autocannon;
