@@ -1,17 +1,6 @@
-# @jobscale/autocannon
-
-## Installation
-
-```
-npm i @jobscale/autocannon @jobscale/autocannon
-```
-
-## Examples
-
-```javascript
 import { formatTimestamp } from '@jobscale/timestamp';
 import { createLogger } from '@jobscale/create-logger';
-import { autocannon } from '@jobscale/autocannon';
+import { autocannon } from './index.js';
 
 const logger = createLogger({ level: 'info', timestamp: true });
 const url = '127.0.0.1:80';
@@ -39,4 +28,3 @@ const it2 = async () => {
 
 it();
 it2();
-```

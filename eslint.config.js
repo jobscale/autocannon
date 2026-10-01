@@ -9,6 +9,7 @@ export default [{
   name: 'standard base rule',
   rules: {
     ...standard.configs.standard.rules,
+    'no-shadow': 'off',
   },
 }, {
   name: 'jest rule',
